@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Notes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/NotesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/CreateNoteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/CreateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/DeleteNoteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/LogOutRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/UpdateNoteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/CreateNoteResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/DeleteNoteResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/LogOutResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/UpdateNoteResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/NotesNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/SuperNoteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/NotesServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources" afterDir="false" />
-    </list>
+    <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="sent" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,8 +123,17 @@
       <option name="presentableId" value="Default" />
       <updated>1712513110261</updated>
       <workItem from="1712513111553" duration="2991000" />
-      <workItem from="1712737386215" duration="26495000" />
+      <workItem from="1712737386215" duration="26955000" />
     </task>
+    <task id="LOCAL-00001" summary="sent">
+      <option name="closed" value="true" />
+      <created>1712772844561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712772844561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,5 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="sent" />
+    <option name="LAST_COMMIT_MESSAGE" value="sent" />
   </component>
 </project>
