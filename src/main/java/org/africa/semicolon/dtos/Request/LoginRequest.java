@@ -1,4 +1,4 @@
-package org.africa.semicolon.Dtos.Request;
+package org.africa.semicolon.dtos.Request;
 
 import lombok.Data;
 
@@ -6,4 +6,5 @@ import lombok.Data;
 public class LoginRequest {
     private String username;
     private  String password;
+    private boolean logged;
 }

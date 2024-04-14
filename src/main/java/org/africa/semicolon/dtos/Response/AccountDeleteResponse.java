@@ -1,9 +1,9 @@
-package org.africa.semicolon.Dtos.Response;
+package org.africa.semicolon.dtos.Response;
 
 import lombok.Data;
 
 @Data
-public class LogOutResponse {
+public class AccountDeleteResponse {
     private String username;
     private String message;
 }

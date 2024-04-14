@@ -3,13 +3,13 @@ package org.africa.semicolon.services;
 import org.africa.semicolon.Data.Model.Notes;
 import org.africa.semicolon.Data.Model.User;
 import org.africa.semicolon.Data.Repository.NotesRepository;
-import org.africa.semicolon.Data.Repository.UserRepository;
-import org.africa.semicolon.Dtos.Request.CreateNoteRequest;
-import org.africa.semicolon.Dtos.Request.DeleteNoteRequest;
-import org.africa.semicolon.Dtos.Request.UpdateNoteRequest;
-import org.africa.semicolon.Dtos.Response.CreateNoteResponse;
-import org.africa.semicolon.Dtos.Response.DeleteNoteResponse;
-import org.africa.semicolon.Dtos.Response.UpdateNoteResponse;
+import org.africa.semicolon.Exception.UserNotFoundException;
+import org.africa.semicolon.dtos.Request.CreateNoteRequest;
+import org.africa.semicolon.dtos.Request.DeleteNoteRequest;
+import org.africa.semicolon.dtos.Request.UpdateNoteRequest;
+import org.africa.semicolon.dtos.Response.CreateNoteResponse;
+import org.africa.semicolon.dtos.Response.DeleteNoteResponse;
+import org.africa.semicolon.dtos.Response.UpdateNoteResponse;
 import org.africa.semicolon.Exception.NotesNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,7 +47,21 @@ public class NotesServiceImpl implements NotesService{
         updateNoteResponse.setMessage("Update Successful");
         return updateNoteResponse;
     }
-        private  Notes FindByTitle(String title){
+
+    @Override
+    public String Delete(DeleteNoteRequest deleteNoteRequest) {
+        Notes notes = notesRepository.findNotesByTitle(deleteNoteRequest.getTitle().toLowerCase());
+        if (notes == null) throw new NotesNotFoundException("Username doesn't exist");
+        notesRepository.delete(notes);
+
+        DeleteNoteResponse deleteNoteResponse = new DeleteNoteResponse();
+        String message;
+        message = "Notes successfully deleted";
+        return message;
+    }
+
+
+    private  Notes findByTitle(String title){
         Notes notes = notesRepository.findNotesByTitle(title);
         if(notes == null) throw  new NotesNotFoundException("note not found");
         return notes;

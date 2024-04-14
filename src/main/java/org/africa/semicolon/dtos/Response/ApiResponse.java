@@ -1,4 +1,4 @@
-package org.africa.semicolon.Dtos.Response;
+package org.africa.semicolon.dtos.Response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

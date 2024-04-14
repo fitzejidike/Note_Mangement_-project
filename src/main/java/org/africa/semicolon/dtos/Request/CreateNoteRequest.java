@@ -1,11 +1,10 @@
-package org.africa.semicolon.Dtos.Response;
+package org.africa.semicolon.dtos.Request;
 
 import lombok.Data;
 
 @Data
-public class CreateNoteResponse {
+public class CreateNoteRequest {
     private  String author;
     private  String title;
     private  String body;
-    private  String message;
 }

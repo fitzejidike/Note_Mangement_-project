@@ -1,3 +1,695 @@
+POST http://localhost:9001/api/v1/user/Login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12334"
+}
+
+<> 2024-04-12T234638.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 142
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fiygh",
+  "lastname": "fzugiu",
+  "number": "fzyfiu",
+  "username": "gclgu",
+  "password": "iulhp'o;u",
+  "email": "cghvj"
+}
+
+<> 2024-04-12T180303.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 166
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "FITZGERALD",
+  "lastname": "EJIDIKE",
+  "number": "09103837757",
+  "username": "FITZ",
+  "password": "1233445",
+  "email": "FITZEJIDIKE@GMAIL.COM"
+}
+
+<> 2024-04-12T180302-1.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "owlflight",
+  "email": "qwfwfsfssv"
+}
+
+<> 2024-04-12T180302.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "Fitz@gmail"
+}
+
+<> 2024-04-12T180301.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/Logout
+Content-Type: application/json
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz"
+}
+
+<> 2024-04-12T180259-1.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/Login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "Fitz",
+  "password": "12345"
+}
+
+<> 2024-04-12T180259.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12345",
+  "email": "gerald@gmail.com"
+}
+
+<> 2024-04-12T180258.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Length: 58
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Content-Type: application/json> 2024-04-11T111451.400.json
+
+<> 2024-04-12T180258.415.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 79
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "Fitz",
+  "password": "password",
+  "email": "fitz@gmail.com"
+}
+
+<> 2024-04-12T180257.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 142
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fiygh",
+  "lastname": "fzugiu",
+  "number": "fzyfiu",
+  "username": "gclgu",
+  "password": "iulhp'o;u",
+  "email": "cghvj"
+}
+
+<> 2024-04-12T180220.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 142
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fiygh",
+  "lastname": "fzugiu",
+  "number": "fzyfiu",
+  "username": "gclgu",
+  "password": "iulhp'o;u",
+  "email": "cghvj"
+}
+
+<> 2024-04-12T180058.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 142
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fiygh",
+  "lastname": "fzugiu",
+  "number": "fzyfiu",
+  "username": "gclgu",
+  "password": "iulhp'o;u",
+  "email": "cghvj"
+}
+
+<> 2024-04-12T180056.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 142
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fiygh",
+  "lastname": "fzugiu",
+  "number": "fzyfiu",
+  "username": "gclgu",
+  "password": "iulhp'o;u",
+  "email": "cghvj"
+}
+
+<> 2024-04-12T180053.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 166
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "FITZGERALD",
+  "lastname": "EJIDIKE",
+  "number": "09103837757",
+  "username": "FITZ",
+  "password": "1233445",
+  "email": "FITZEJIDIKE@GMAIL.COM"
+}
+
+<> 2024-04-11T223714.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "owlflight",
+  "email": "qwfwfsfssv"
+}
+
+<> 2024-04-11T123241.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "owlflight",
+  "email": "qwfwfsfssv"
+}
+
+<> 2024-04-11T123112.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "owlflight",
+  "email": "qwfwfsfssv"
+}
+
+<> 2024-04-11T115002.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "Fitz@gmail"
+}
+
+<> 2024-04-11T114720.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 53
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "",
+  "password": "",
+  "email": ""
+}
+
+<> 2024-04-11T114644.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/Logout
+Content-Type: application/json
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz"
+}
+
+<> 2024-04-11T114620.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/Logout
+Content-Type: application/json
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz"
+}
+
+<> 2024-04-11T112315.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/Login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "Fitz",
+  "password": "12345"
+}
+
+<> 2024-04-11T112144.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12345",
+  "email": "gerald@gmail.com"
+}
+
+<> 2024-04-11T111931.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 79
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "Fitz",
+  "password": "password",
+  "email": "fitz@gmail.com"
+}
+
+<> 2024-04-11T111534.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-11T111451.400.json
+
+###
+
+POST http://localhost:8080/api/v1/user/register
+Content-Type: application/json
+Content-Length: 79
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "Fitz",
+  "password": "password",
+  "email": "fitz@gmail.com"
+}
+
+<> 2024-04-11T111004.404.json
+
+###
+
+POST http://localhost:8080/api/v1/user/register
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-11T110757.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "123455",
+  "email": "Fitz@gmail.com"
+}
+
+<> 2024-04-11T110645.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "123455",
+  "email": "Fitz@gmail.com"
+}
+
+<> 2024-04-11T110504.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fizt",
+  "email": "fizt@gail.com",
+  "password": "1234"
+}
+
+<> 2024-04-11T023435.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fizt",
+  "email": "fizt@gail.com",
+  "password": "1234"
+}
+
+<> 2024-04-11T012710.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fizt",
+  "email": "fizt@gail.com",
+  "password": "1234"
+}
+
+<> 2024-04-11T010802.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fizt",
+  "password": "1234",
+  "email": "fizt@gail.com"
+}
+
+<> 2024-04-11T010541.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "fitz2@gmail.com"
+}
+
+<> 2024-04-11T010159.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fit",
+  "password": "password",
+  "email": "email"
+}
+
+<> 2024-04-11T005441.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fit",
+  "password": "password",
+  "email": "email"
+}
+
+<> 2024-04-11T005213.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "fitz2@gmail.com"
+}
+
+<> 2024-04-11T005130.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "fitz2@gmail.com"
+}
+
+<> 2024-04-11T005038.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "fitz2@gmail.com"
+}
+
+<> 2024-04-11T004751.404.json
+
+###
+
+POST http://localhost:8080/api/v1/registerUser
+Content-Type: application/json
+Content-Length: 81
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fitz",
+  "password": "12344",
+  "email": "fitz2@gmail.com",
+
+}
+
+<> 2024-04-11T004721.404.json
+
+###
+
 POST http://localhost:8080/api/v1/registerUser
 Content-Type: application/json
 Content-Length: 75
