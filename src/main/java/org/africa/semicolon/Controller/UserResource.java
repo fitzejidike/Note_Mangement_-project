@@ -15,7 +15,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
 @RequestMapping("/api/v1/user")
-public class UserController {
+public class UserResource {
 
     @Autowired
     private UserService userService;
@@ -29,7 +29,7 @@ public class UserController {
             return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
         }
     }
-    @PostMapping("/Login")
+    @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest){
         try{
             var result = userService.login(loginRequest);
@@ -38,7 +38,7 @@ public class UserController {
             return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
         }
     }
-    @PostMapping("/Logout")
+    @PostMapping("/logout")
     public ResponseEntity<?> logout(@RequestBody LogOutRequest logOutRequest){
         try {
             var result = userService.logout(logOutRequest);
@@ -76,10 +76,10 @@ public class UserController {
             return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
         }
     }
-    @DeleteMapping("/accountDelete")
-    public ResponseEntity<?> Delete(@RequestBody DeleteNoteRequest DeleteNoteRequest) {
+    @DeleteMapping("/delete")
+    public ResponseEntity<?> delete(@RequestBody DeleteNoteRequest DeleteNoteRequest) {
         try {
-            var result = userService.Delete(DeleteNoteRequest);
+            var result = userService.delete(DeleteNoteRequest);
             return new ResponseEntity<>(new ApiResponse(true, result), CREATED);
         } catch (SuperNoteException e) {
             return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public interface NotesService {
     CreateNoteResponse createNote(CreateNoteRequest createNoteRequest);
     UpdateNoteResponse updateNote(UpdateNoteRequest updateNoteRequest);
-    String Delete(DeleteNoteRequest deleteNoteRequest);
+    String delete(DeleteNoteRequest deleteNoteRequest);
     long count();
 
 }

@@ -30,7 +30,7 @@ NotesService notesService;
         DeleteNoteRequest deleteNoteRequest = new DeleteNoteRequest();
         deleteNoteRequest.setTitle("adventures ");
         deleteNoteRequest.setAuthor("zoey");
-        notesService.Delete(deleteNoteRequest);
+        notesService.delete(deleteNoteRequest);
         assertEquals(0, notesRepository.count());
     }
 

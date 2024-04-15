@@ -58,7 +58,7 @@ class UserServiceImplTest {
         DeleteNoteRequest deleteNoteRequest = new DeleteNoteRequest();
         deleteNoteRequest.setTitle("F.O.E");
         deleteNoteRequest.setAuthor("fitz");
-        userService.Delete(deleteNoteRequest);
+        userService.delete(deleteNoteRequest);
         assertEquals(0, userService.count());
     }
 }

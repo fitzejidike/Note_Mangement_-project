@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="sent">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/LoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/AccountDeleteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/AccountDeleteResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/NotesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/NotesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/CreateNoteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/CreateNoteRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/CreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/CreateUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/DeleteNoteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/DeleteNoteRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/LogOutRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/LogOutRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Request/UpdateNoteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Request/UpdateNoteRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/CreateNoteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateNoteResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/DeleteNoteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/DeleteNoteResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/LogOutResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/LogOutResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/LoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Dtos/Response/UpdateNoteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/UpdateNoteResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/NotesServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/NotesServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +66,7 @@
     &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #20.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #21.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #25.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #4.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #5.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #8.executor&quot;: &quot;Run&quot;,
@@ -126,8 +107,8 @@
       <recent name="org.africa.semicolon.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.delete">
-    <configuration name="generated-requests | #21" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="21" requestIdentifier="#21" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="generated-requests | #25" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="25" requestIdentifier="#25" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="UserServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -193,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="HTTP Request.generated-requests | #25" />
         <item itemvalue="JUnit.UserServiceImplTest.delete" />
         <item itemvalue="JUnit.UserServiceImplTest.registerUser" />
         <item itemvalue="JUnit.UserServiceImplTest.loginTest" />
-        <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="HTTP Request.generated-requests | #21" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +204,9 @@
       <workItem from="1713053697089" duration="684000" />
       <workItem from="1713084775717" duration="1055000" />
       <workItem from="1713112820934" duration="7521000" />
+      <workItem from="1713134205253" duration="766000" />
+      <workItem from="1713135546633" duration="2228000" />
+      <workItem from="1713165550195" duration="2783000" />
     </task>
     <task id="LOCAL-00001" summary="sent">
       <option name="closed" value="true" />
@@ -232,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712772844561</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sent">
+      <option name="closed" value="true" />
+      <created>1713134230647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713134230647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

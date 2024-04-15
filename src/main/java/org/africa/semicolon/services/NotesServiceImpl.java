@@ -49,7 +49,7 @@ public class NotesServiceImpl implements NotesService{
     }
 
     @Override
-    public String Delete(DeleteNoteRequest deleteNoteRequest) {
+    public String delete(DeleteNoteRequest deleteNoteRequest) {
         Notes notes = notesRepository.findNotesByTitle(deleteNoteRequest.getTitle().toLowerCase());
         if (notes == null) throw new NotesNotFoundException("Username doesn't exist");
         notesRepository.delete(notes);

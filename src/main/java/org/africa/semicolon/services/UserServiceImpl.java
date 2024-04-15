@@ -88,8 +88,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String Delete(DeleteNoteRequest deleteNoteRequest) {
-        return notesService.Delete(deleteNoteRequest);
+    public String delete(DeleteNoteRequest deleteNoteRequest) {
+        return notesService.delete(deleteNoteRequest);
     }
 
     @Override
