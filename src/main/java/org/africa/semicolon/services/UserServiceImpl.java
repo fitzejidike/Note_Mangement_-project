@@ -73,7 +73,7 @@ public class UserServiceImpl implements UserService {
 
         AccountDeleteResponse accountDeleteResponse = new AccountDeleteResponse();
         accountDeleteResponse.setUsername(accountDeleteRequest.getUsername().toLowerCase());
-        accountDeleteResponse.setMessage("Notes successfully deleted");
+        accountDeleteResponse.setMessage("Account successfully deleted");
         return accountDeleteResponse;
 
     }

@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="sent">
+    <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="finished">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-10T164817.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-10T164956.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/NotesServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/NotesServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +68,22 @@
     &quot;HTTP Request.generated-requests | #20.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #21.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #25.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #26.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #27.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #28.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #29.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #32.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #33.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #34.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #35.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #36.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #38.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #4.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #5.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #8.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.createNote.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserServiceImplTest.delete.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserServiceImplTest.loginTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserServiceImplTest.registerUser.executor&quot;: &quot;Run&quot;,
@@ -108,56 +121,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="generated-requests | #25" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="25" requestIdentifier="#25" runType="Run single request">
+    <configuration name="generated-requests | #34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" requestIdentifier="#34" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NoteMangement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.africa.semicolon.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #35" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="35" requestIdentifier="#35" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NoteMangement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.africa.semicolon.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #36" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="36" requestIdentifier="#36" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest.registerUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NoteMangement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.africa.semicolon.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="registerUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #38" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="38" requestIdentifier="#38" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="NoteMangement" />
@@ -175,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="HTTP Request.generated-requests | #25" />
-        <item itemvalue="JUnit.UserServiceImplTest.delete" />
-        <item itemvalue="JUnit.UserServiceImplTest.registerUser" />
-        <item itemvalue="JUnit.UserServiceImplTest.loginTest" />
+        <item itemvalue="HTTP Request.generated-requests | #38" />
+        <item itemvalue="HTTP Request.generated-requests | #36" />
+        <item itemvalue="HTTP Request.generated-requests | #35" />
+        <item itemvalue="HTTP Request.generated-requests | #34" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +180,11 @@
       <workItem from="1713112820934" duration="7521000" />
       <workItem from="1713134205253" duration="766000" />
       <workItem from="1713135546633" duration="2228000" />
-      <workItem from="1713165550195" duration="2783000" />
+      <workItem from="1713165550195" duration="4887000" />
+      <workItem from="1713389680469" duration="1790000" />
+      <workItem from="1713469646166" duration="3854000" />
+      <workItem from="1713899465547" duration="604000" />
+      <workItem from="1713947463348" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="sent">
       <option name="closed" value="true" />
@@ -224,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713134230647</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished">
+      <option name="closed" value="true" />
+      <created>1713189908198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713189908199</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="sent" />
-    <option name="LAST_COMMIT_MESSAGE" value="sent" />
+    <MESSAGE value="finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished" />
   </component>
 </project>

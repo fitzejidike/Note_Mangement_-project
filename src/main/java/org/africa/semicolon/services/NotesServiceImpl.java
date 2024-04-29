@@ -36,7 +36,7 @@ public class NotesServiceImpl implements NotesService{
 
     @Override
     public UpdateNoteResponse updateNote(UpdateNoteRequest updateNoteRequest) {
-        Notes note = new Notes();
+        Notes note = notesRepository.findNotesByTitle(updateNoteRequest.getTitle());
         note.setAuthor(updateNoteRequest.getAuthor());
         note.setTitle(updateNoteRequest.getTitle());
         notesRepository.save(note);
@@ -50,8 +50,8 @@ public class NotesServiceImpl implements NotesService{
 
     @Override
     public String delete(DeleteNoteRequest deleteNoteRequest) {
-        Notes notes = notesRepository.findNotesByTitle(deleteNoteRequest.getTitle().toLowerCase());
-        if (notes == null) throw new NotesNotFoundException("Username doesn't exist");
+        Notes notes = notesRepository.findNotesByTitle(deleteNoteRequest.getTitle());
+        if (notes == null) throw new NotesNotFoundException("title doesn't exist");
         notesRepository.delete(notes);
 
         DeleteNoteResponse deleteNoteResponse = new DeleteNoteResponse();
