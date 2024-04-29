@@ -3,6 +3,7 @@ package org.africa.semicolon.services;
 import org.africa.semicolon.Data.Repository.NotesRepository;
 import org.africa.semicolon.dtos.Request.CreateNoteRequest;
 import org.africa.semicolon.dtos.Request.DeleteNoteRequest;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,11 @@ NotesRepository notesRepository;
 @Autowired
 NotesService notesService;
 
+@BeforeEach
+    void clearAll(){
+    notesRepository.deleteAll();
+
+}
     @Test
     void test_to_delete_note() {
         CreateNoteRequest createNoteRequest = new CreateNoteRequest();
@@ -28,7 +34,7 @@ NotesService notesService;
         notesService.createNote(createNoteRequest);
         assertEquals(1,notesRepository.count());
         DeleteNoteRequest deleteNoteRequest = new DeleteNoteRequest();
-        deleteNoteRequest.setTitle("adventures ");
+        deleteNoteRequest.setTitle("adventures");
         deleteNoteRequest.setAuthor("zoey");
         notesService.delete(deleteNoteRequest);
         assertEquals(0, notesRepository.count());
@@ -50,7 +56,5 @@ NotesService notesService;
     void updateNote() {
     }
 
-    @Test
-    void count() {
-    }
+
 }

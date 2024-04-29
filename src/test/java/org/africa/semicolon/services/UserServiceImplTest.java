@@ -5,6 +5,7 @@ import org.africa.semicolon.Data.Repository.UserRepository;
 import org.africa.semicolon.dtos.Request.CreateUserRequest;
 import org.africa.semicolon.dtos.Request.DeleteNoteRequest;
 import org.africa.semicolon.dtos.Request.LoginRequest;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,11 @@ class UserServiceImplTest {
     UserRepository userRepository;
 @Autowired
     UserService userService;
+    @BeforeEach
+    void clearAll(){
+        userRepository.deleteAll();
+
+    }
 
     @Test
     void loginTest() {

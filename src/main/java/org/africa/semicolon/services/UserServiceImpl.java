@@ -16,11 +16,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private NotesService notesService;
 
+
     @Override
     public LoginResponse login(LoginRequest loginRequest) {
         User user = new User();
-        user.setUsername(loginRequest.getUsername().toLowerCase());
-        user.setPassword(loginRequest.getPassword().toLowerCase());
+        user.setUsername(loginRequest.getUsername());
+        user.setPassword(loginRequest.getPassword());
         user.setLogged(true);
         if(!user.getUsername().equals(loginRequest.getUsername())) throw  new LoginException("WRONG USERNAME ENTERED");
         if(!user.getPassword().equals(loginRequest.getPassword())) throw new LoginException("WRONG PASSWORD ENTERED");
@@ -46,10 +47,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public CreateUserResponse registerUser(CreateUserRequest createUserRequest) {
         User user = new User();
-        user.setFirstname(createUserRequest.getFirstname().toLowerCase());
-        user.setLastname(createUserRequest.getLastname().toLowerCase());
+        user.setFirstname(createUserRequest.getFirstname());
+        user.setLastname(createUserRequest.getLastname());
         user.setNumber(createUserRequest.getNumber());
-        user.setUsername(createUserRequest.getUsername().toLowerCase());
+        user.setUsername(createUserRequest.getUsername());
         user.setEmail(createUserRequest.getEmail());
         user.setPassword(createUserRequest.getPassword());
         userRepository.save(user);
