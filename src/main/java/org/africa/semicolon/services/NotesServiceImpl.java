@@ -26,9 +26,7 @@ public class NotesServiceImpl implements NotesService{
         notes.setBody(createNoteRequest.getBody());
         notesRepository.save(notes);
         CreateNoteResponse createNoteResponse = new CreateNoteResponse();
-        createNoteResponse.setTitle(createNoteRequest.getTitle());
         createNoteResponse.setAuthor(createNoteRequest.getAuthor());
-        createNoteResponse.setBody(createNoteRequest.getBody());
         createNoteResponse.setMessage("Note created successfully");
         return createNoteResponse;
 

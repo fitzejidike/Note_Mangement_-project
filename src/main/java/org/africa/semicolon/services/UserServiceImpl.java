@@ -2,12 +2,19 @@ package org.africa.semicolon.services;
 
 import org.africa.semicolon.Data.Model.User;
 import org.africa.semicolon.Data.Repository.UserRepository;
+import org.africa.semicolon.Exception.InvalidPasswordException;
 import org.africa.semicolon.Exception.LoginException;
+import org.africa.semicolon.Exception.UserAlreadyExistRequest;
 import org.africa.semicolon.dtos.Request.*;
 import org.africa.semicolon.dtos.Response.*;
 import org.africa.semicolon.Exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+import static org.africa.semicolon.Util.Mapper.mapDelete;
+import static org.africa.semicolon.Util.Mapper.mapUser;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -19,23 +26,24 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public LoginResponse login(LoginRequest loginRequest) {
-        User user = new User();
-        user.setUsername(loginRequest.getUsername());
-        user.setPassword(loginRequest.getPassword());
+        User user = userRepository.findByUsername(loginRequest.getUsername());
+        validatePassword(loginRequest.getPassword(),user);
+        validateUserName(loginRequest.getUsername(),user);
         user.setLogged(true);
-        if(!user.getUsername().equals(loginRequest.getUsername())) throw  new LoginException("WRONG USERNAME ENTERED");
-        if(!user.getPassword().equals(loginRequest.getPassword())) throw new LoginException("WRONG PASSWORD ENTERED");
         userRepository.save(user);
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setUsername(loginRequest.getUsername());
         loginResponse.setMessage("Login successfully");
         return loginResponse;
     }
+    private static void validateUserName(String userName,User user){
+        if(!user.getUsername().equals(user.getUsername())) throw  new LoginException("WRONG USERNAME ENTERED");
+    }
 
     @Override
     public LogOutResponse logout(LogOutRequest logoutRequest) {
-        User user = new User();
-        user.setUsername(logoutRequest.getUsername());
+        User user = userRepository.findByUsername(logoutRequest.getUsername());
+        validateUserName(logoutRequest.getUsername(),user);
         user.setLogged(false);
         userRepository.save(user);
         LogOutResponse logOutResponse = new LogOutResponse();
@@ -46,36 +54,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public CreateUserResponse registerUser(CreateUserRequest createUserRequest) {
-        User user = new User();
-        user.setFirstname(createUserRequest.getFirstname());
-        user.setLastname(createUserRequest.getLastname());
-        user.setNumber(createUserRequest.getNumber());
-        user.setUsername(createUserRequest.getUsername());
-        user.setEmail(createUserRequest.getEmail());
-        user.setPassword(createUserRequest.getPassword());
-        userRepository.save(user);
+        check(createUserRequest.getUsername().toLowerCase());
+        userRepository.save(mapUser(createUserRequest));
 
         CreateUserResponse createUserResponse = new CreateUserResponse();
         createUserResponse.setFirstname(createUserRequest.getFirstname());
-        createUserResponse.setLastname(createUserRequest.getLastname());
-        createUserResponse.setNumber(createUserRequest.getNumber());
-        createUserResponse.setUsername(createUserRequest.getUsername());
-        createUserResponse.setEmail(createUserRequest.getEmail());
-        createUserResponse.setMessage("User created successfully");
+        createUserResponse.setMessage("User Created Successfully");
         return createUserResponse;
     }
 
 
     @Override
-    public AccountDeleteResponse accountDelete(AccountDeleteRequest accountDeleteRequest) {
-        User user = userRepository.findByUsername(accountDeleteRequest.getUsername().toLowerCase());
-        if (user == null) throw new UserNotFoundException("Username doesn't exist");
+    public void accountDelete(AccountDeleteRequest accountDeleteRequest) {
+        User user = userRepository.findByUsername(accountDeleteRequest.getUsername());
+        validateLogin(user);
         userRepository.delete(user);
 
-        AccountDeleteResponse accountDeleteResponse = new AccountDeleteResponse();
-        accountDeleteResponse.setUsername(accountDeleteRequest.getUsername().toLowerCase());
-        accountDeleteResponse.setMessage("Account successfully deleted");
-        return accountDeleteResponse;
 
     }
     @Override
@@ -97,5 +91,16 @@ public class UserServiceImpl implements UserService {
     public long count() {
         return notesService.count();
     }
+    private  void check(String username){
 
+        User user = userRepository.findByUsername(username);
+         if (!(user == null))
+             throw new UserAlreadyExistRequest("User Already exist");
+    }
+    private void  validateLogin(User user){
+        if(!user.isLogged())throw new LoginException("User not logged in");
+    }
+    private static  void validatePassword(String password,User user){
+        if(!password.equals(user.getPassword())) throw new InvalidPasswordException("Invalid Password Entered");
+    }
 }

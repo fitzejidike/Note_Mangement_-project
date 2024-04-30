@@ -10,8 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import static org.springframework.http.HttpStatus.BAD_REQUEST;
-import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @RequestMapping("/api/v1/user")
@@ -25,7 +24,7 @@ public class UserResource {
         try {
             var result = userService.registerUser(createUserRequest);
             return new ResponseEntity<>(new ApiResponse(true, result),CREATED);
-        }catch (UserNotFoundException e){
+        }catch (Exception e){
             return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
         }
     }
@@ -52,8 +51,8 @@ public class UserResource {
     @DeleteMapping("/accountDelete")
     public ResponseEntity<?> accountDelete(@RequestBody AccountDeleteRequest accountDeleteRequest){
         try{
-            var result = userService.accountDelete(accountDeleteRequest);
-            return new ResponseEntity<>(new ApiResponse(true,result),CREATED);
+            userService.accountDelete(accountDeleteRequest);
+            return new ResponseEntity<>(new ApiResponse(true,"Deleted"),CREATED);
         }catch (SuperNoteException e){
             return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
         }
@@ -67,7 +66,8 @@ public class UserResource {
         }catch (SuperNoteException e){
             return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
         }
-    }@PostMapping("/updateNote")
+    }
+    @PostMapping("/updateNote")
     public ResponseEntity<?>updateNote(@RequestBody UpdateNoteRequest updateNoteRequest){
         try{
             var result = userService.updateNote(updateNoteRequest);
