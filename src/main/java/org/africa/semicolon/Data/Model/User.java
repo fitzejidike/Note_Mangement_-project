@@ -1,14 +1,25 @@
 package org.africa.semicolon.Data.Model;
 
+import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.ArrayList;
+
+import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
-@Document("User")
+import static jakarta.persistence.GenerationType.IDENTITY;
+import static java.time.LocalDateTime.now;
+
+@Setter
+@Getter
+@Entity
+@Table(name = "_users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private String id;
     private String firstname;
     private String lastname;
@@ -16,7 +27,22 @@ public class User {
     private String email;
     private String username;
     private String password;
-    private boolean logged;
-    private List<Notes> notes = new ArrayList<>();
-}
 
+    @OneToMany(fetch = FetchType.EAGER)
+    private List<Notes> notes;
+    @Setter(AccessLevel.NONE)
+    private LocalDateTime timeCreated;
+    @Setter(AccessLevel.NONE)
+    private LocalDateTime timeUpdate;
+
+    @PrePersist
+    private void setTimeCreated() {
+        this.timeCreated = now();
+    }
+
+    @PreUpdate
+    private void setTimeUpdated() {
+        this.timeUpdate = now();
+    }
+
+}

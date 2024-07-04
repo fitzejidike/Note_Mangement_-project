@@ -1,3 +1,122 @@
+DELETE http://localhost:9001/api/v1/user/accountDelete
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-05-06T105607.400.json
+
+###
+
+DELETE http://localhost:9001/api/v1/user/accountDelete
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-05-06T105246.400.json
+
+###
+
+POST http://localhost:9001/api/v1/user/login
+Content-Type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fit",
+  "password": "1234",
+  "logged": false
+}
+
+<> 2024-05-06T104051.500.json
+
+###
+
+POST http://localhost:9001/api/v1/user/login
+Content-Type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "fit",
+  "password": "1234",
+  "logged": false
+}
+
+<> 2024-05-06T103342.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 145
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "fitz",
+  "lastname": "ike",
+  "number": "09023445679",
+  "username": "fit",
+  "password": "1234",
+  "email": "Fitz@Gmail.com"
+}
+
+<> 2024-05-06T103311.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/login
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "chichi",
+  "password": "1234",
+  "logged": false
+}
+
+<> 2024-05-06T103138.500.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Type: application/json
+Content-Length: 151
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "claire",
+  "lastname": "ike",
+  "number": "09101678594",
+  "username": "chichi",
+  "password": "12345",
+  "email": "Fitz@gmail.com"
+}
+
+<> 2024-05-05T153350.201.json
+
+###
+
+POST http://localhost:9001/api/v1/user/register
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-05-05T153137.400.json
+
+###
+
 DELETE http://localhost:9001/api/v1/user/delete
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
@@ -619,144 +738,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2024-04-15T190657.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/Login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "fitz",
-  "password": "12334"
-}
-
-<> 2024-04-12T234638.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/register
-Content-Type: application/json
-Content-Length: 142
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "fiygh",
-  "lastname": "fzugiu",
-  "number": "fzyfiu",
-  "username": "gclgu",
-  "password": "iulhp'o;u",
-  "email": "cghvj"
-}
-
-<> 2024-04-12T180303.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/register
-Content-Type: application/json
-Content-Length: 166
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "FITZGERALD",
-  "lastname": "EJIDIKE",
-  "number": "09103837757",
-  "username": "FITZ",
-  "password": "1233445",
-  "email": "FITZEJIDIKE@GMAIL.COM"
-}
-
-<> 2024-04-12T180302-1.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/register
-Content-Type: application/json
-Content-Length: 76
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "fitz",
-  "password": "owlflight",
-  "email": "qwfwfsfssv"
-}
-
-<> 2024-04-12T180302.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/register
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "fitz",
-  "password": "12344",
-  "email": "Fitz@gmail"
-}
-
-<> 2024-04-12T180301.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/Logout
-Content-Type: application/json
-Content-Length: 24
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "fitz"
-}
-
-<> 2024-04-12T180259-1.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/Login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "Fitz",
-  "password": "12345"
-}
-
-<> 2024-04-12T180259.201.json
-
-###
-
-POST http://localhost:9001/api/v1/user/register
-Content-Type: application/json
-Content-Length: 78
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "fitz",
-  "password": "12345",
-  "email": "gerald@gmail.com"
-}
-
-<> 2024-04-12T180258.201.json
 
 ###
 

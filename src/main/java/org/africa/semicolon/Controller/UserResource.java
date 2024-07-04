@@ -11,13 +11,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.http.HttpStatus.*;
-
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserResource {
 
-    @Autowired
+
     private UserService userService;
+
+    public UserResource(UserService userService) {
+        this.userService = userService;
+    }
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody CreateUserRequest createUserRequest){

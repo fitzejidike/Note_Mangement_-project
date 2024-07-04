@@ -3,6 +3,7 @@ package org.africa.semicolon.services;
 import org.africa.semicolon.Data.Repository.NotesRepository;
 import org.africa.semicolon.dtos.Request.CreateNoteRequest;
 import org.africa.semicolon.dtos.Request.DeleteNoteRequest;
+import org.africa.semicolon.dtos.Request.UpdateNoteRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -54,6 +55,20 @@ NotesService notesService;
 
     @Test
     void updateNote() {
+        CreateNoteRequest createNoteRequest = new CreateNoteRequest();
+        createNoteRequest.setAuthor("zoey");
+        createNoteRequest.setTitle("adventures");
+        createNoteRequest.setBody("am going to enter highschool");
+        notesService.createNote(createNoteRequest);
+        assertEquals(1,notesRepository.count());
+        UpdateNoteRequest updateNoteRequest = new UpdateNoteRequest();
+        updateNoteRequest.setAuthor("zoey");
+        updateNoteRequest.setTitle("adventures");
+        updateNoteRequest.setBody("just wanted to check up on you");
+        notesService.updateNote(updateNoteRequest);
+        assertEquals(updateNoteRequest.getBody(),updateNoteRequest.getBody());
+
+
     }
 
 

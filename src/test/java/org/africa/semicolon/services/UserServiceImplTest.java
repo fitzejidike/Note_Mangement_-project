@@ -31,13 +31,13 @@ class UserServiceImplTest {
         createUserRequest.setLastname("dike");
         createUserRequest.setUsername("foe");
         createUserRequest.setNumber("09150429499");
-        createUserRequest.setPassword("123465");
+        createUserRequest.setPassword("12346512");
         createUserRequest.setEmail("leo@gmail.com");
         userService.registerUser(createUserRequest);
         assertEquals(1,userRepository.count());
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername("foe");
-        loginRequest.setPassword("123465");
+        loginRequest.setPassword("12346512");
         userService.login(loginRequest);
         assertTrue(userRepository.findByUsername(loginRequest.getUsername()).isLogged());
 
@@ -50,13 +50,13 @@ class UserServiceImplTest {
         createUserRequest.setLastname("dike");
         createUserRequest.setUsername("foe");
         createUserRequest.setNumber("09150429499");
-        createUserRequest.setPassword("123465");
+        createUserRequest.setPassword("12346512");
         createUserRequest.setEmail("leo@gmail.com");
         userService.registerUser(createUserRequest);
         assertEquals(1,userRepository.count());
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername("foe");
-        loginRequest.setPassword("123465");
+        loginRequest.setPassword("12346512");
         userService.login(loginRequest);
         assertTrue(userRepository.findByUsername(loginRequest.getUsername()).isLogged());
         LogOutRequest logOutRequest = new LogOutRequest();
@@ -109,19 +109,19 @@ class UserServiceImplTest {
         createUserRequest.setLastname("dike");
         createUserRequest.setUsername("natsu");
         createUserRequest.setNumber("09150429499");
-        createUserRequest.setPassword("123465");
+        createUserRequest.setPassword("12346512");
         createUserRequest.setEmail("leo@gmail.com");
         userService.registerUser(createUserRequest);
         assertEquals(1,userRepository.count());
 
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername("natsu");
-        loginRequest.setPassword("123465");
+        loginRequest.setPassword("12346512");
         userService.login(loginRequest);
 
         AccountDeleteRequest accountDeleteRequest = new AccountDeleteRequest();
         accountDeleteRequest.setUsername("natsu");
-        accountDeleteRequest.setPassword("123465");
+        accountDeleteRequest.setPassword("12346512");
         userService.accountDelete(accountDeleteRequest);
         assertEquals(0,userRepository.count());
 

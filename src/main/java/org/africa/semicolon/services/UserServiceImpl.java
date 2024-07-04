@@ -2,12 +2,9 @@ package org.africa.semicolon.services;
 
 import org.africa.semicolon.Data.Model.User;
 import org.africa.semicolon.Data.Repository.UserRepository;
-import org.africa.semicolon.Exception.InvalidPasswordException;
-import org.africa.semicolon.Exception.LoginException;
-import org.africa.semicolon.Exception.UserAlreadyExistRequest;
+import org.africa.semicolon.Exception.*;
 import org.africa.semicolon.dtos.Request.*;
 import org.africa.semicolon.dtos.Response.*;
-import org.africa.semicolon.Exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +28,7 @@ public class UserServiceImpl implements UserService {
         validateUserName(loginRequest.getUsername(),user);
         user.setLogged(true);
         userRepository.save(user);
+
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setUsername(loginRequest.getUsername());
         loginResponse.setMessage("Login successfully");
@@ -46,6 +44,7 @@ public class UserServiceImpl implements UserService {
         validateUserName(logoutRequest.getUsername(),user);
         user.setLogged(false);
         userRepository.save(user);
+
         LogOutResponse logOutResponse = new LogOutResponse();
         logOutResponse.setUsername(logoutRequest.getUsername());
         logOutResponse.setMessage("LoggedOut Successfully");
@@ -101,6 +100,20 @@ public class UserServiceImpl implements UserService {
         if(!user.isLogged())throw new LoginException("User not logged in");
     }
     private static  void validatePassword(String password,User user){
+        if (password.length() < 8) {
+            throw new UserNotFoundException("Password must be at least 8 characters");
+        }
+        if (!password.matches("[a-zA-Z0-9]*")) {
+            throw new UserNotFoundException("Password must be alphanumeric");
+        }
+        if (!password.matches(".*\\d.*")) {
+            throw new UserNotFoundException("Password must contain at least one digit");
+        }
         if(!password.equals(user.getPassword())) throw new InvalidPasswordException("Invalid Password Entered");
+    }
+    private void validateEmail(String email) {
+        if (!email.matches("^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")) {
+            throw new InvalidEmailFoundException("Invalid Email");
+        }
     }
 }
