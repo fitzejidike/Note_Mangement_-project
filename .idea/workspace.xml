@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede96cc9-aeb7-49ee-a7d8-a266f2667cb8" name="Changes" comment="finished">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/InvalidPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Exception/UserAlreadyExistRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/handler/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controller/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/NotesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/NotesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateNoteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateNoteResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/Response/CreateUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/NotesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/services/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -70,94 +63,103 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "HTTP Request.All in generated-requests.executor": "Run",
-    "HTTP Request.generated-requests | #1.executor": "Run",
-    "HTTP Request.generated-requests | #12.executor": "Run",
-    "HTTP Request.generated-requests | #13.executor": "Run",
-    "HTTP Request.generated-requests | #14.executor": "Run",
-    "HTTP Request.generated-requests | #15.executor": "Run",
-    "HTTP Request.generated-requests | #16.executor": "Run",
-    "HTTP Request.generated-requests | #17.executor": "Run",
-    "HTTP Request.generated-requests | #18.executor": "Run",
-    "HTTP Request.generated-requests | #19.executor": "Run",
-    "HTTP Request.generated-requests | #2.executor": "Run",
-    "HTTP Request.generated-requests | #20.executor": "Run",
-    "HTTP Request.generated-requests | #21.executor": "Run",
-    "HTTP Request.generated-requests | #25.executor": "Run",
-    "HTTP Request.generated-requests | #26.executor": "Run",
-    "HTTP Request.generated-requests | #27.executor": "Run",
-    "HTTP Request.generated-requests | #28.executor": "Run",
-    "HTTP Request.generated-requests | #29.executor": "Run",
-    "HTTP Request.generated-requests | #32.executor": "Run",
-    "HTTP Request.generated-requests | #33.executor": "Run",
-    "HTTP Request.generated-requests | #34.executor": "Run",
-    "HTTP Request.generated-requests | #35.executor": "Run",
-    "HTTP Request.generated-requests | #36.executor": "Run",
-    "HTTP Request.generated-requests | #38.executor": "Run",
-    "HTTP Request.generated-requests | #4.executor": "Run",
-    "HTTP Request.generated-requests | #41.executor": "Run",
-    "HTTP Request.generated-requests | #42.executor": "Run",
-    "HTTP Request.generated-requests | #43.executor": "Run",
-    "HTTP Request.generated-requests | #45.executor": "Run",
-    "HTTP Request.generated-requests | #46.executor": "Run",
-    "HTTP Request.generated-requests | #47.executor": "Run",
-    "HTTP Request.generated-requests | #48.executor": "Run",
-    "HTTP Request.generated-requests | #5.executor": "Run",
-    "HTTP Request.generated-requests | #50.executor": "Run",
-    "HTTP Request.generated-requests | #58.executor": "Run",
-    "HTTP Request.generated-requests | #59.executor": "Run",
-    "HTTP Request.generated-requests | #61.executor": "Run",
-    "HTTP Request.generated-requests | #64.executor": "Run",
-    "HTTP Request.generated-requests | #65.executor": "Run",
-    "HTTP Request.generated-requests | #69.executor": "Run",
-    "HTTP Request.generated-requests | #70.executor": "Run",
-    "HTTP Request.generated-requests | #74.executor": "Run",
-    "HTTP Request.generated-requests | #8.executor": "Run",
-    "HTTP Request.generated-requests | #9.executor": "Run",
-    "JUnit.NotesServiceImplTest.createNote.executor": "Run",
-    "JUnit.NotesServiceImplTest.executor": "Run",
-    "JUnit.NotesServiceImplTest.test_to_delete_note.executor": "Run",
-    "JUnit.UserServiceImplTest.CannotRegisterTwice.executor": "Run",
-    "JUnit.UserServiceImplTest.delete.executor": "Run",
-    "JUnit.UserServiceImplTest.executor": "Run",
-    "JUnit.UserServiceImplTest.loginTest.executor": "Run",
-    "JUnit.UserServiceImplTest.logoutTest.executor": "Run",
-    "JUnit.UserServiceImplTest.registerUser.executor": "Run",
-    "JUnit.UserServiceImplTest.test_to_delete_account.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Main.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/fitz/IdeaProjects/NoteMangement/src/main/java/org/africa/semicolon/Diagram",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/fitz/IdeaProjects/NoteMangement/src/main/java/org/africa/semicolon/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #12.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #13.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #14.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #15.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #16.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #17.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #18.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #19.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #20.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #21.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #25.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #26.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #27.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #28.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #29.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #32.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #33.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #34.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #35.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #36.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #38.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #41.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #42.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #43.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #45.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #46.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #47.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #48.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #50.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #58.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #59.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #61.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #64.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #65.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #69.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #70.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #74.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #75.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #76.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #78.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #79.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #8.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #80.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #84.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #85.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.createNote.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.test_to_delete_note.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotesServiceImplTest.updateNote.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.CannotRegisterTwice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.logoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.registerUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.test_to_delete_account.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fitz/IdeaProjects/NoteMangement/src/main/java/org/africa/semicolon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/fitz/IdeaProjects/NoteMangement/src/main/java/org/africa/semicolon/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.africa.semicolon.Exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fitz\IdeaProjects\NoteMangement\src\main\java\org\africa\semicolon" />
       <recent name="C:\Users\fitz\IdeaProjects\NoteMangement\src\main\java\org\africa\semicolon\Diagram" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -167,18 +169,69 @@
       <recent name="org.africa.semicolon.services" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #74">
-    <configuration name="generated-requests | #65" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="65" requestIdentifier="#65" runType="Run single request">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.UserServiceImplTest">
+    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NoteMangement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.africa.semicolon.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
+      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #69" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="69" requestIdentifier="#69" runType="Run single request">
-      <method v="2" />
+    <configuration name="UserServiceImplTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NoteMangement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.africa.semicolon.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
+      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #70" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="70" requestIdentifier="#70" runType="Run single request">
-      <method v="2" />
+    <configuration name="UserServiceImplTest.logoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NoteMangement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.africa.semicolon.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
+      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="logoutTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #74" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="74" requestIdentifier="#74" runType="Run single request">
-      <method v="2" />
+    <configuration name="UserServiceImplTest.test_to_delete_account" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NoteMangement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.africa.semicolon.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.africa.semicolon.services" />
+      <option name="MAIN_CLASS_NAME" value="org.africa.semicolon.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="test_to_delete_account" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="NoteMangement" />
@@ -195,10 +248,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #74" />
-        <item itemvalue="HTTP Request.generated-requests | #70" />
-        <item itemvalue="HTTP Request.generated-requests | #69" />
-        <item itemvalue="HTTP Request.generated-requests | #65" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.test_to_delete_account" />
+        <item itemvalue="JUnit.UserServiceImplTest.logoutTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.loginTest" />
         <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
@@ -206,7 +259,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -235,6 +288,27 @@
       <workItem from="1714403823830" duration="74000" />
       <workItem from="1714410363268" duration="25605000" />
       <workItem from="1714469487602" duration="13404000" />
+      <workItem from="1714485749242" duration="2499000" />
+      <workItem from="1714498941627" duration="28000" />
+      <workItem from="1714778123281" duration="1921000" />
+      <workItem from="1714919355217" duration="9310000" />
+      <workItem from="1714997086235" duration="635000" />
+      <workItem from="1715018508532" duration="3014000" />
+      <workItem from="1715021649512" duration="381000" />
+      <workItem from="1715022208145" duration="171000" />
+      <workItem from="1715022598630" duration="3731000" />
+      <workItem from="1715078582465" duration="3656000" />
+      <workItem from="1715087915267" duration="251000" />
+      <workItem from="1715093282868" duration="11366000" />
+      <workItem from="1715591877143" duration="1036000" />
+      <workItem from="1717425707490" duration="579000" />
+      <workItem from="1719011943956" duration="2450000" />
+      <workItem from="1719433443084" duration="1942000" />
+      <workItem from="1719561793189" duration="1319000" />
+      <workItem from="1719965356469" duration="8404000" />
+      <workItem from="1720111787826" duration="4976000" />
+      <workItem from="1722762737885" duration="730000" />
+      <workItem from="1722763648721" duration="2575000" />
     </task>
     <task id="LOCAL-00001" summary="sent">
       <option name="closed" value="true" />
@@ -276,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714409446499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished">
+      <option name="closed" value="true" />
+      <created>1714485791085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714485791086</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finished">
+      <option name="closed" value="true" />
+      <created>1720119052953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720119052953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,5 +384,9 @@
         <PinnedItemInfo parentTag="org.africa.semicolon.services.UserServiceImpl" memberName="userRepository" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

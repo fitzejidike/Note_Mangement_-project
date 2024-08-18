@@ -17,7 +17,7 @@ import static org.springframework.http.HttpStatus.*;
 public class UserResource {
 
 
-    private UserService userService;
+    private final UserService userService;
 
     public UserResource(UserService userService) {
         this.userService = userService;
@@ -25,12 +25,11 @@ public class UserResource {
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody CreateUserRequest createUserRequest){
-        try {
+
             var result = userService.registerUser(createUserRequest);
             return new ResponseEntity<>(new ApiResponse(true, result),CREATED);
-        }catch (Exception e){
-            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
-        }
+
+
     }
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest){

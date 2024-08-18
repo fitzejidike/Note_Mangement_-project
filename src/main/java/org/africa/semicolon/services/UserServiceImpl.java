@@ -15,10 +15,15 @@ import static org.africa.semicolon.Util.Mapper.mapUser;
 
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private UserRepository userRepository;
-    @Autowired
-    private NotesService notesService;
+
+    private  final UserRepository userRepository;
+
+    private final NotesService notesService;
+
+    public UserServiceImpl(UserRepository userRepository, NotesService notesService) {
+        this.userRepository = userRepository;
+        this.notesService = notesService;
+    }
 
 
     @Override
@@ -26,7 +31,6 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findByUsername(loginRequest.getUsername());
         validatePassword(loginRequest.getPassword(),user);
         validateUserName(loginRequest.getUsername(),user);
-        user.setLogged(true);
         userRepository.save(user);
 
         LoginResponse loginResponse = new LoginResponse();
@@ -42,7 +46,7 @@ public class UserServiceImpl implements UserService {
     public LogOutResponse logout(LogOutRequest logoutRequest) {
         User user = userRepository.findByUsername(logoutRequest.getUsername());
         validateUserName(logoutRequest.getUsername(),user);
-        user.setLogged(false);
+
         userRepository.save(user);
 
         LogOutResponse logOutResponse = new LogOutResponse();
@@ -66,7 +70,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void accountDelete(AccountDeleteRequest accountDeleteRequest) {
         User user = userRepository.findByUsername(accountDeleteRequest.getUsername());
-        validateLogin(user);
+//        validateLogin(user);
         userRepository.delete(user);
 
 
@@ -96,9 +100,9 @@ public class UserServiceImpl implements UserService {
          if (!(user == null))
              throw new UserAlreadyExistRequest("User Already exist");
     }
-    private void  validateLogin(User user){
-        if(!user.isLogged())throw new LoginException("User not logged in");
-    }
+//    private void  validateLogin(User user){
+//        if(!user.isLogged())throw new LoginException("User not logged in");
+//    }
     private static  void validatePassword(String password,User user){
         if (password.length() < 8) {
             throw new UserNotFoundException("Password must be at least 8 characters");

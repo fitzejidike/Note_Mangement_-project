@@ -27,6 +27,7 @@ public class User {
     private String email;
     private String username;
     private String password;
+    private Boolean isLoggedIn;
 
     @OneToMany(fetch = FetchType.EAGER)
     private List<Notes> notes;
