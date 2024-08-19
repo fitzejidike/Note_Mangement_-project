@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import static org.hibernate.query.results.Builders.entity;
 import static org.springframework.http.HttpStatus.*;
 @CrossOrigin(origins="*")
 @RestController
@@ -24,68 +25,50 @@ public class UserResource {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<?> registerUser(@RequestBody CreateUserRequest createUserRequest){
-
-            var result = userService.registerUser(createUserRequest);
-            return new ResponseEntity<>(new ApiResponse(true, result),CREATED);
+    public ResponseEntity<?> registerUser(@RequestBody CreateUserRequest createUserRequest) {
+        return ResponseEntity.status(CREATED)
+                .body(new ApiResponse(userService.registerUser(createUserRequest), true));
 
 
     }
+
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest){
-        try{
-            var result = userService.login(loginRequest);
-            return new ResponseEntity<>(new ApiResponse(true,result),CREATED);
-        }catch (LoginException e){
-            return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
-        }
+    public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
+        return ResponseEntity.status(CREATED)
+                .body(new ApiResponse(userService.login(loginRequest), true));
     }
+
+
     @PostMapping("/logout")
-    public ResponseEntity<?> logout(@RequestBody LogOutRequest logOutRequest){
-        try {
-            var result = userService.logout(logOutRequest);
-            return new ResponseEntity<>(new ApiResponse(true, result), CREATED);
-        }catch (SuperNoteException e){
-            return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
+    public ResponseEntity<?> logout(@RequestBody LogOutRequest logOutRequest) {
+        return ResponseEntity.status(CREATED)
+                .body(new ApiResponse(userService.logout(logOutRequest), true));
 
 
-        }
     }
+
     @DeleteMapping("/accountDelete")
-    public ResponseEntity<?> accountDelete(@RequestBody AccountDeleteRequest accountDeleteRequest){
-        try{
-            userService.accountDelete(accountDeleteRequest);
-            return new ResponseEntity<>(new ApiResponse(true,"Deleted"),CREATED);
-        }catch (SuperNoteException e){
-            return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
-        }
+    public ResponseEntity<?> accountDelete(@RequestBody AccountDeleteRequest request) {
+        return ResponseEntity.status(OK)
+                .body(new ApiResponse(userService.accountDelete(request), true));
 
     }
+
     @PostMapping("/createNote")
-    public ResponseEntity<?>createNote(@RequestBody CreateNoteRequest createNoteRequest){
-        try{
-            var result = userService.createNote(createNoteRequest);
-            return new ResponseEntity<>(new ApiResponse(true,result),CREATED);
-        }catch (SuperNoteException e){
-            return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
-        }
+    public ResponseEntity<?> createNote(@RequestBody CreateNoteRequest createNoteRequest) {
+        return ResponseEntity.status(CREATED)
+                .body(new ApiResponse(userService.createNote(createNoteRequest), true));
     }
+
     @PostMapping("/updateNote")
-    public ResponseEntity<?>updateNote(@RequestBody UpdateNoteRequest updateNoteRequest){
-        try{
-            var result = userService.updateNote(updateNoteRequest);
-            return new ResponseEntity<>(new ApiResponse(true,result),CREATED);
-        }catch (SuperNoteException e){
-            return new ResponseEntity<>(new ApiResponse(false,e.getMessage()),BAD_REQUEST);
-        }
+    public ResponseEntity<?> updateNote(@RequestBody UpdateNoteRequest updateNoteRequest) {
+       return ResponseEntity.status(ACCEPTED).body(new ApiResponse(userService.updateNote(updateNoteRequest),true));
     }
+
     @DeleteMapping("/delete")
-    public ResponseEntity<?> delete(@RequestBody DeleteNoteRequest DeleteNoteRequest) {
-        try {
-            var result = userService.delete(DeleteNoteRequest);
-            return new ResponseEntity<>(new ApiResponse(true, result), CREATED);
-        } catch (SuperNoteException e) {
-            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
-        }
+    public ResponseEntity<?> delete(@RequestBody DeleteNoteRequest deleteNoteRequest) {
+        return ResponseEntity.status(OK)
+                .body(new ApiResponse(userService.delete(deleteNoteRequest), true));
     }
+
 }

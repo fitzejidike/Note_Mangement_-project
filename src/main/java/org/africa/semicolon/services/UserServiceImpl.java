@@ -5,12 +5,8 @@ import org.africa.semicolon.Data.Repository.UserRepository;
 import org.africa.semicolon.Exception.*;
 import org.africa.semicolon.dtos.Request.*;
 import org.africa.semicolon.dtos.Response.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
-import static org.africa.semicolon.Util.Mapper.mapDelete;
 import static org.africa.semicolon.Util.Mapper.mapUser;
 
 @Service
@@ -68,10 +64,17 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void accountDelete(AccountDeleteRequest accountDeleteRequest) {
+    public AccountDeleteResponse accountDelete(AccountDeleteRequest accountDeleteRequest) {
         User user = userRepository.findByUsername(accountDeleteRequest.getUsername());
+        if (user == null) {
+            throw new UserNotFoundException
+                    ("User " + accountDeleteRequest.getUsername() + " does not exist" );
+        }
 //        validateLogin(user);
         userRepository.delete(user);
+        AccountDeleteResponse response = new AccountDeleteResponse();
+        response.setMessage( "Account deleted successfully");
+        return response;
 
 
     }
